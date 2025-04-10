@@ -37,6 +37,7 @@ public class DuplicatesFinderTest {
         List<String> stringList = List.of("a", "w", "r", "w", "e", "w", "r");
         // When
         List<String> results = duplicatesFinder.search(stringList);
+        System.out.println(results);
         // Then
         assertThat(results.size()).isEqualTo(2);
         assertThat(results.getFirst()).isEqualTo("w");
