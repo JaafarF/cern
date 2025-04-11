@@ -1,5 +1,6 @@
 package com.jaafarfora.cern_exercises.SpreadsheetEngine;
 
+import com.jaafarfora.cern_exercises.SpreadsheetEngine.ValueTypes.ValueType;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -57,7 +58,7 @@ public class SpreadsheetImplTest {
             sheet.put(3, 7, "foo");
         }
 
-        /*@Test
+        @Test
         public void basicValueTypesAreRecognized() {
             sheet.put(2, 3, "foo");
             Assert.assertEquals(ValueType.STRING, sheet.getValueType(2, 3));
@@ -76,7 +77,7 @@ public class SpreadsheetImplTest {
             Assert.assertEquals("= 4 + 8", sheet.get(1, 1));
         }
 
-        @Test
+        /*@Test
         public void integerCellsAreTrimmed() {
             sheet.put(1, 1, "     50 ");
             Assert.assertEquals("50", sheet.get(1, 1));

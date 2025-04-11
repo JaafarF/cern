@@ -1,5 +1,7 @@
 package com.jaafarfora.cern_exercises.SpreadsheetEngine;
 
+import com.jaafarfora.cern_exercises.SpreadsheetEngine.ValueTypes.ValueType;
+
 import java.util.Arrays;
 
 public class SpreadsheetImpl {
@@ -19,5 +21,18 @@ public class SpreadsheetImpl {
 
     public void put(int x, int y, String value) {
         this.sheet[x][y] = value;
+    }
+
+    public ValueType getValueType(int x, int y) {
+        String value = this.get(x, y).trim();
+        if (value.startsWith("= ")) {
+            return ValueType.FORMULA;
+        }
+        try {
+            Integer.parseInt(value);
+            return ValueType.INTEGER;
+        } catch (NumberFormatException _) {}
+
+        return ValueType.STRING;
     }
 }
