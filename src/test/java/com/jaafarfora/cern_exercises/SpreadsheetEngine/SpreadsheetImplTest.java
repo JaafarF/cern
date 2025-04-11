@@ -38,7 +38,7 @@ public class SpreadsheetImplTest {
             Assert.assertEquals("", sheet.get(3, 4));
         }
 
-        /*@Test
+        @Test
         public void cellsAreStored() {
             sheet.put(1, 2, "foo");
             Assert.assertEquals("foo", sheet.get(1, 2));
@@ -47,7 +47,7 @@ public class SpreadsheetImplTest {
             Assert.assertEquals("bar", sheet.get(3, 3));
         }
 
-        @Test(expected = IndexOutOfBoundsException.class)
+        /*@Test(expected = IndexOutOfBoundsException.class)
         public void cantGetOutOfLimits() {
             sheet.get(12, 3);
         }

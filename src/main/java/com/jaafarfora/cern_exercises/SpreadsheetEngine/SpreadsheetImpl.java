@@ -6,7 +6,11 @@ public class SpreadsheetImpl {
 
     }
 
-    public String get(int i, int i1) {
+    public String get(int x, int y) {
         return "";
+    }
+
+    public void put(int x, int y, String value) {
+
     }
 }
