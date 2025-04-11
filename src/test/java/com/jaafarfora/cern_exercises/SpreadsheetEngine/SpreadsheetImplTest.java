@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.Arrays;
+
 @RunWith(JUnit4.class)
 public class SpreadsheetImplTest {
 
@@ -77,7 +79,7 @@ public class SpreadsheetImplTest {
             Assert.assertEquals("= 4 + 8", sheet.get(1, 1));
         }
 
-        /*@Test
+        @Test
         public void integerCellsAreTrimmed() {
             sheet.put(1, 1, "     50 ");
             Assert.assertEquals("50", sheet.get(1, 1));
@@ -87,10 +89,10 @@ public class SpreadsheetImplTest {
             Assert.assertEquals("     foo ", sheet.get(2, 2));
         }
 
-        *//**
+        /**
          * In a more real example, the different representations could perhaps be JSON,
          * XML, CSV and binary format. But we will use simple export options here.
-         *//*
+         */
         @Test
         public void differentExportOptionsAreProvided() {
             sheet.put(0, 0, "a");
@@ -112,6 +114,7 @@ public class SpreadsheetImplTest {
                     + "-----" // 9
                 , new DashSpreadsheetExporter(sheet).export());
 
+
             Assert.assertEquals("10,5#" // Line breaks added for readability. There are no "\n" in the String
                     + "a*****" // 0
                     + "*b****" // 1
@@ -124,5 +127,6 @@ public class SpreadsheetImplTest {
                     + "*****" // 8
                     + "*****" // 9
                 , new StarSpreadsheetExporter(sheet).export());
-        }*/
+
+        }
 }
