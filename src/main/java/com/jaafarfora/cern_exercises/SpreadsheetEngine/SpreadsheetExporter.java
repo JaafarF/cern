@@ -1,14 +1,10 @@
 package com.jaafarfora.cern_exercises.SpreadsheetEngine;
 
-public class StarSpreadsheetExporter {
+public abstract class SpreadsheetExporter {
     SpreadsheetImpl sheetToExport;
-    private static final  char SYMBOL = '*';
-    public static final int ROWS = 10;
-    public static final int COLUMNS = 5;
-
-    public StarSpreadsheetExporter(SpreadsheetImpl sheet) {
-        this.sheetToExport = sheet;
-    }
+    public static String SYMBOL;
+    private static final int ROWS = 10;
+    private static final int COLUMNS = 5;
 
     public String export() {
         StringBuilder sheetContent = new StringBuilder(ROWS + "," + COLUMNS + "#");
