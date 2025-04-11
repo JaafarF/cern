@@ -47,7 +47,7 @@ public class SpreadsheetImplTest {
             Assert.assertEquals("bar", sheet.get(3, 3));
         }
 
-        /*@Test(expected = IndexOutOfBoundsException.class)
+        @Test(expected = IndexOutOfBoundsException.class)
         public void cantGetOutOfLimits() {
             sheet.get(12, 3);
         }
@@ -57,7 +57,7 @@ public class SpreadsheetImplTest {
             sheet.put(3, 7, "foo");
         }
 
-        @Test
+        /*@Test
         public void basicValueTypesAreRecognized() {
             sheet.put(2, 3, "foo");
             Assert.assertEquals(ValueType.STRING, sheet.getValueType(2, 3));
