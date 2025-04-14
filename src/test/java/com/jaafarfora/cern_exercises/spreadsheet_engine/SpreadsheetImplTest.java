@@ -1,13 +1,11 @@
-package com.jaafarfora.cern_exercises.SpreadsheetEngine;
+package com.jaafarfora.cern_exercises.spreadsheet_engine;
 
-import com.jaafarfora.cern_exercises.SpreadsheetEngine.ValueTypes.ValueType;
+import com.jaafarfora.cern_exercises.spreadsheet_engine.ValueTypes.ValueType;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-
-import java.util.Arrays;
 
 @RunWith(JUnit4.class)
 public class SpreadsheetImplTest {

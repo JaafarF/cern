@@ -1,6 +1,6 @@
-package com.jaafarfora.cern_exercises.SpreadsheetEngine;
+package com.jaafarfora.cern_exercises.spreadsheet_engine;
 
-import com.jaafarfora.cern_exercises.SpreadsheetEngine.ValueTypes.*;
+import com.jaafarfora.cern_exercises.spreadsheet_engine.ValueTypes.*;
 
 import java.util.Arrays;
 import java.util.List;

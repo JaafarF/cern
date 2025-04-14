@@ -1,4 +1,4 @@
-package com.jaafarfora.cern_exercises.SpreadsheetEngine;
+package com.jaafarfora.cern_exercises.spreadsheet_engine;
 
 public class StarSpreadsheetExporter extends SpreadsheetExporter {
 
